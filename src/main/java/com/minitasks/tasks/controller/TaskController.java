@@ -1,4 +1,4 @@
-package com.minitasks.tasks;
+package com.minitasks.tasks.controller;
 
 
 import com.minitasks.tasks.dto.Task;
