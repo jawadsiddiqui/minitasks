@@ -43,13 +43,19 @@ public class AuthController {
         if(userRepository.existsByUsername(registerDTO.getUsername())){
             return new ResponseEntity<>("User already exists!", HttpStatus.BAD_REQUEST);
         }
-        Role role = roleRepository.findByName("USER").get();
+        Role role = roleRepository.findByName("USER").orElseGet(()->{
+            Role newRole = new Role();
+            newRole.setName("USER");
+            return roleRepository.save(newRole);
+        });
 
         UserEntity user = UserEntity.builder()
                 .username(registerDTO.getUsername())
                 .password(passwordEncoder.encode(registerDTO.getPassword()))
                 .roles(Collections.singletonList(role))
                 .build();
+
+        userRepository.save(user);
 
         return new ResponseEntity<>("User "+registerDTO.getUsername()+" has been created!", HttpStatus.OK);
     }
