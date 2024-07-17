@@ -1,6 +1,6 @@
 package com.minitasks.tasks.repository;
 
-import com.minitasks.tasks.dto.Role;
+import com.minitasks.tasks.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

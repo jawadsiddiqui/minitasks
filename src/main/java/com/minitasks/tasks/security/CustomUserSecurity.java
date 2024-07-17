@@ -1,7 +1,7 @@
 package com.minitasks.tasks.security;
 
-import com.minitasks.tasks.dto.Role;
-import com.minitasks.tasks.dto.UserEntity;
+import com.minitasks.tasks.model.Role;
+import com.minitasks.tasks.model.UserEntity;
 import com.minitasks.tasks.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;

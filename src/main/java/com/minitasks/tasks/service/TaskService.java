@@ -1,6 +1,6 @@
 package com.minitasks.tasks.service;
 
-import com.minitasks.tasks.dto.Task;
+import com.minitasks.tasks.model.Task;
 import com.minitasks.tasks.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

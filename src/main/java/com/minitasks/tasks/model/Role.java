@@ -1,4 +1,4 @@
-package com.minitasks.tasks.dto;
+package com.minitasks.tasks.model;
 
 
 import jakarta.persistence.*;

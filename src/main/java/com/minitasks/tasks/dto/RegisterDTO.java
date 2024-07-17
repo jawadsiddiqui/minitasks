@@ -1,4 +1,4 @@
-package com.minitasks.tasks.controller;
+package com.minitasks.tasks.dto;
 
 import lombok.Data;
 

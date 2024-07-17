@@ -1,6 +1,6 @@
 package com.minitasks.tasks.repository;
 
-import com.minitasks.tasks.dto.UserEntity;
+import com.minitasks.tasks.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

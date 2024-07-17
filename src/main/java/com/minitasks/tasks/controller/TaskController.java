@@ -1,7 +1,7 @@
 package com.minitasks.tasks.controller;
 
 
-import com.minitasks.tasks.dto.Task;
+import com.minitasks.tasks.model.Task;
 import com.minitasks.tasks.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
