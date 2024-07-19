@@ -18,12 +18,12 @@ import java.util.stream.Collectors;
 
 
 @Service
-public class CustomUserSecurity implements UserDetailsService {
+public class CustomUserDetailService implements UserDetailsService {
 
     private UserRepository userRepository;
 
     @Autowired
-    public CustomUserSecurity(UserRepository userRepository) {
+    public CustomUserDetailService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
